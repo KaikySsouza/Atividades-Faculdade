@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    
+    
 }
 
 body {
@@ -11,7 +13,18 @@ body {
 }
 
 
-form{
+
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+} 
+
+.login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,97 +33,84 @@ form{
 }
 
 
-
 .container {
+    
     padding: 90px;
     background: #12212e7e;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.192);
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    gap: 12px;
-}
-
-.options > #remember {
-    margin: -5px;
-    padding: 0px;
-    cursor: pointer;
-    margin-left: 10px;
     
 }
 
-.options > label{
-    font-size: 15px;
-    color: #757171cc;
-    font-weight: 500;
-    
-}
-
-.options > a {
-    text-decoration: none;
-    color: #757171cc;
-    font-size: 15px;
-    
-}
-
-.options > a:hover {
-    color: #fff;
-    transition: 0.5s;
-}
-
-
-h1{
+h1 {
+    font-weight: 400;
     font-size: 50px;
     color: #000000a3;
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 400;
 }
 
 input {
     display: flex;
-    margin: 20px;
-    padding: 10px;
+    margin: 15px;
+    padding: 15px;
     font-size: 20px;
     border-radius: 10px;
     border: none;
     background-color: #0000003a;
 }
 
-
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 button {
     display: flex;
     justify-content: center;
     align-items: center;    
-    padding: 15px;
-    width: 180px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 140px;
     height: 50px;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
     border: none;
     color: #000;
     background-color: #0000003a;
-    cursor: pointer;
 
 }
+
+button > a{ 
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+    text-decoration: none;
+    
+}
+
 
 button:hover {
     background-color: #00000093;
     color: #fff;
     transition: 0.5s;
-
 }
 
+h2 {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin: 20px;
+    
+}
 
 h2 > a {
     text-decoration: none;
